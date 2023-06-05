@@ -1,0 +1,303 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(78, 91, 135);
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(78, 91, 135);
+    cursor: pointer;
+}
+
+#mybox {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    font-size: 0px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner_text {
+    position: absolute;
+    font-size: 20px;
+    top: 120px;
+    left: 70px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.banner_text2 {
+    padding-top: 20px;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    font-size: 0px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 首页 */
+#main {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.main_left {
+    width: 300px;
+    /* 左浮动 */
+    float: left;
+    margin-right: 20px;
+}
+
+.main_left img {
+    width: 100%;
+    height: 360px;
+}
+
+.main_left_txt {
+    /* 相对定位 */
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 10px;
+}
+
+.main_left_txt p {
+    line-height: 22px;
+}
+
+
+.main_left_txt h4 {
+    color: rgb(78, 91, 135);
+    top: 0px;
+}
+
+.main_right {
+    /* 转为行内块元素 */
+    display: inline-block;
+    width: 640px;
+}
+
+.main_right h2 {
+    color: rgb(78, 91, 135);
+    margin-bottom: 20px;
+}
+
+.index_h2 {
+    margin-top: 20px;
+}
+
+.book_txt1 {
+    text-indent: 2em;
+    line-height: 50px;
+}
+
+.img_list {
+    width: 100%;
+    font-size: 0px;
+}
+
+.img_list img {
+    width: 30%;
+    margin-left: 5%;
+}
+
+.img_list img:first-child {
+    margin-left: 0px;
+}
+
+footer {
+    width: 1000px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+
+/* 图书 */
+#main h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0px;
+    margin-bottom: 30px;
+}
+
+.book_list li img {
+    width: 130px;
+    height: 194px;
+}
+
+.book_list li {
+    height: 194px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.book_list li:nth-child(2n-1) img {
+    /* 奇数左浮动 */
+    float: left;
+    margin-right: 20px;
+}
+
+.book_list li:nth-child(2n) img {
+    /* 偶数右浮动 */
+    float: right;
+    margin-left: 20px;
+}
+
+.book_title {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.book_txt {
+    line-height: 40px;
+}
+
+
+/* 摄影 */
+#main h2 {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0px;
+    margin-bottom: 30px;
+}
+
+#tableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* 弹性布局flex和网格布局思想中的均等间距 */
+.photo {
+    box-sizing: border-box;
+    width: calc(25% - 10px);
+    margin-bottom: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: 225px;
+}
+
+/* 流体布局 */
+/* .photo_list {
+    width: 100%;
+    font-size: 0px;
+}
+
+.photo_list img {
+    width: 23.5%;
+    height: 225px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+.photo_list img:nth-child(4n-3) {
+    margin-left: 0px;
+} */
+
+video {
+    width: 100%;
+}
+
+
+/* 音乐 */
+.music_list {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.music_list td {
+    width: 33.33%;
+    padding: 10px;
+    /* 让单元格文本垂直居中 */
+    vertical-align: middle;
+}
+
+.music_list img {
+    width: 100%;
+}
+
+.music_list audio {
+    /* 转为块元素 */
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* 留言 */
+.img2 {
+    width: 300px;
+    /* 左浮动 */
+    float: left;
+    margin-right: 100px;
+    margin-left: 50px;
+
+}
+
+#contact_form>div {
+    /* 转为行内块元素 */
+    display: inline-block;
+}
+
+#contact_form>div>form>div {
+    margin-bottom: 20px;
+}
+
+#contact_form>div>form>div span {
+    /* 转为行内块元素 */
+    display: inline-block;
+    width: 100px;
+}
+
+.input1 input {
+    width: 220px;
+    height: 24px;
+}
+
+
+button {
+    width: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(78, 91, 135);
+}
